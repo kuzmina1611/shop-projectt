@@ -207,8 +207,82 @@
 <script setup>
 import { ref } from 'vue'
 
-const activeDot = ref(null)
-const hoveredCard = ref(null)
+const activeDot = ref(null);
+const hoveredCard = ref(null);
+
+const clothingStyles = ref([
+  {
+    styleId: 1,
+    image: '/1.jpg',
+    productPoints: [
+        {
+          productId: 1,
+          position: {
+            top: 39,
+            left: 42,
+          },
+          brand: 'NOCTA',
+          name: 'Fleece CS Hoodie 2',
+          price: '$120',
+        },
+        {
+          productId: 2,
+          position: {
+            top: 74,
+            left: 14,
+          },
+          brand: 'Nike Everyday Plus Cushioned',
+          name: 'Training Ankle Socks (6 Pairs)',
+          price: '$21.97',
+        },
+        {
+          productId: 3,
+          position: {
+            top: 83,
+            left: 95,
+          },
+          brand: 'NOCTA Zoom Drive',
+          name: 'Men\'s Shoes',
+          price: '$107.97',
+        },
+    ],
+  },{
+    styleId: 2,
+    image: '/2.jpg',
+    productPoints: [
+        {
+          productId: 1,
+          position: {
+            top: 13,
+            left: 20,
+          },
+          brand: 'Nike Life',
+          name: 'Men\'s Wilderness Sweater',
+          price: '$157.97',
+        },
+        {
+          productId: 2,
+          position: {
+            top: 18,
+            left: 88,
+          },
+          brand: 'Nike Club',
+          name: 'Unstructured Cap',
+          price: '$18.97',
+        },
+        {
+          productId: 3,
+          position: {
+            top: 70,
+            left: 23,
+          },
+          brand: 'Nike Recharge',
+          name: 'Tritan Chug Bottle (24 oz)',
+          price: '$26',
+        },
+    ],
+  }
+]);
 </script>
 
 <style scoped>
